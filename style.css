@@ -1,0 +1,368 @@
+@font-face {
+  font-family: reckless;
+  src: url(./RecklessCondensedS-TRIAL-Regular.otf);
+}
+@font-face {
+  font-family: figtree;
+  src: url(./Figtree-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main
+{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fbf9eb;
+}
+
+nav
+{
+  padding: 0.8rem 5vw;
+  font-family: reckless;
+  width: 100%;
+  background-color: #fffefb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1vw;
+  font-size:0.8rem;
+  position: sticky;
+  z-index: 999;
+}
+nav .nav-part-1
+{
+  display: flex;
+  gap:1rem;
+  
+  font-weight: 300;
+  width: 33%;
+  display: none;
+}
+nav i
+{
+  font-size:2rem; 
+  width: 33%;
+}
+nav .nav-part-1 h3
+{
+  font-weight: 300;
+}
+nav .nav-part-2
+{
+  height: auto;
+  display: flex;
+}
+nav .nav-part-2 img
+{
+  width: 100%;
+  object-fit: cover;
+}
+nav .nav-part-3
+{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 33%;
+  gap: 2rem;
+ 
+}
+nav .nav-part-3 h3
+{
+  font-weight: 300;
+  display: none;
+}
+nav .nav-part-3 img
+{
+  width:20%;
+}
+.one
+{
+  width: 100%;
+  min-height: 80vh;
+  background:url(./AlpineBerry.webp_v=1774284236&width=3200.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem;
+  gap: 1rem;
+  text-align: center;
+}
+.main-text
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.one h1
+{
+  display: flex;
+  font-family: reckless;
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.one p
+{
+  font-family: figtree;
+  color: #fff;
+  font-weight: 600;
+}
+.one button
+{
+  width: 100%;
+  padding: 1rem 3rem;
+  border: none;
+  color: #fff;
+  background-color:#2a2857; 
+  font-family: figtree;
+  border-radius: 2rem;
+}
+.two
+{
+  padding: 0 1rem;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.two .info
+{
+  padding:3rem;
+  padding-top: 15vw;
+  font-size: 2rem;
+  font-family: reckless;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 20vw;
+}
+.two .slider-controls button
+{
+  position: absolute;
+  height: 2.5rem;
+  width:2.5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.two .left-scroll
+{
+  top:55%;
+  z-index: 1;
+}
+.two .right-scroll
+{
+   top:55%;
+  z-index: 1;
+  right:5%; 
+}
+.two .best-sellers
+{
+  
+  background-color: #E0B6F2;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+
+}
+.two .cards
+{
+  padding: 1rem;
+  width: 100%;
+  min-height: 80vw;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.4s ease;
+}
+.two .cards .card
+{ 
+  flex-shrink: 0;
+  width:350px;
+  height:539px;
+}
+.two .cards .card .image
+{
+  height: 400px;
+  width: 100%;
+  position: relative; 
+  padding: 2rem;
+  border-radius: 10px;
+}
+.cards .card:nth-child(1) .image { background: #ABED78; }
+.cards .card:nth-child(2) .image { background: #FFD884; }
+.cards .card:nth-child(3) .image { background: #B0E8C1; }
+.cards .card:nth-child(4) .image { background: #AEE0F9; }
+.cards .card:nth-child(5) .image { background: #ABDF74; }
+.cards .card:nth-child(6) .image { background: #FFCB96; }
+.cards .card:nth-child(7) .image { background: #FFDAB3; }
+.cards .card:nth-child(8) .image { background: #AEE0F9; }
+.cards .card:nth-child(9) .image { background: #B6F2D1; }
+.two .cards .card img
+{
+  object-fit: cover;
+  width: 300px;
+}
+.two .cards .card button
+{
+  font-weight: bold;
+  font-family: figtree;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: fit-content;
+    padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start; 
+}
+.two .cards .card .card-info
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: figtree;  
+}
+.two .cards .card h5
+{
+  font-size: 1.5rem;
+  font-family: reckless;
+  font-weight: 100;
+  padding-top:10px;
+  padding-bottom: 15px;
+}
+.two .cards .card p
+{
+  font-family: figtree;
+  padding-bottom: 5px;
+}
+.two .cards .card .add
+{
+  font-family: figtree;
+  font-weight: 500;
+  padding: 0.6rem;
+  border-radius:10px;
+  position: absolute;
+  right: 5%;
+  top: 80%;
+}
+.two .btn
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.two .explore
+{
+ background-color: #2a2857; 
+ color: #fff;
+ border-radius: 30px;
+ padding: 1rem 4rem;
+ font-size: 1.1rem;
+}
+@media (min-width:768px) {
+  
+}
+@media (min-width:1024px) {
+  .main-text{
+    align-items: flex-start;
+  }
+  .one h1
+  {
+    width: 25%;
+  }
+    .one p
+    {
+      width: 34%;
+    }
+  .one button
+{
+  width: fit-content;
+}
+  nav .nav-part-1
+{
+  display: flex;
+  gap:1rem; 
+  font-weight: 300;
+  width: 30%;
+} 
+
+nav i
+{
+  display: none;
+}
+
+nav .nav-part-1 h3
+{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+nav
+{
+  padding: 0.5rem 1vw;
+  font-family: reckless;
+  width: 100%;
+  background-color: #fffefb;
+  display: flex;
+
+  border-radius: 1vw;
+  font-size:0.8rem;
+  position: sticky;
+  z-index: 999;
+}
+nav .nav-part-2
+{
+  width: 5%;
+  display: flex;
+}
+.nav-part-3{
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: end;
+}
+nav .nav-part-3 h3
+{
+  font-weight: 300;
+  display: block;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.two
+{
+  padding:  0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.two .info 
+{
+  font-size: 4rem;
+  width: 60%;
+}
+}
