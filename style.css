@@ -164,12 +164,12 @@ nav .nav-part-3 img
 
 .two .left-scroll
 {
-  top:55%;
+  top:50%;
   z-index: 1;
 }
 .two .right-scroll
 {
-   top:55%;
+   top:50%;
   z-index: 1;
   right:5%; 
 }
@@ -185,7 +185,7 @@ nav .nav-part-3 img
   border: none;
   padding: 5px;
   transform: rotate(-2.5deg);
-
+  border:1px solid black;
 }
 .two .cards
 {
@@ -284,8 +284,336 @@ nav .nav-part-3 img
  padding: 1rem 4rem;
  font-size: 1.1rem;
 }
-@media (min-width:768px) {
+.line-parent
+{
+  padding-top: 60px;
+}
+.line
+{
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+.three
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}  
+.discover{
+  background-color: #FF7F31;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+}
+.three p
+{
+  font-family: reckless;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   
+} 
+input::placeholder
+{
+  font-size: 2rem;
+  font-family: reckless;
+  width: 100%;
+
+}
+input
+{
+  height: 5rem;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding-left: 40px;
+  border:1px solid gray;
+  background: transparent;
+}
+.three .small-text
+{
+  font-family: figtree;
+  font-size: 1rem;
+  font-weight: 100;
+  
+}
+.three .texts 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.three .texts button
+{
+  font-family: reckless;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #AEE0F9;
+}
+.four
+{
+  width: 100%;
+  min-height: 100vh;
+  background: url(./adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp_v=1771592855&width=2560.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 3rem;
+  align-items: center;
+  gap: 30vw;
+}
+.four .origin
+{
+  background-color: #AEE0F9;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+}
+.four h1
+{
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: figtree;
+  text-align: center;
+}
+.four p
+{
+  font-family: reckless;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.four .four-features
+{
+  width: 100%;
+  min-height: 40vw;
+  display: flex;
+}
+.four .four-features img{
+  height:90px;
+  width:90px;
+  object-fit: cover;
+}
+
+.four .four-features p
+{
+  font-weight: 600;
+  font-family: figtree;
+  font-size: 1rem;
+  text-align: center;
+}
+.four-info
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.four button
+{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+.five
+{
+  width:100%;
+  min-height: 200px;
+  padding:15vw 10vw 15vw 10vw;
+  position: relative;
+  overflow: hidden;
+}
+.review
+{
+  background-color: #ABDF74;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+
+}
+.five h1
+{
+  font-family: reckless;
+  font-size: 4rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+.decks
+{
+  padding-top: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
+  /* overflow: hidden; */
+  transition: transform 0.4s ease;
+}
+.five .scroll-bar button
+{
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  z-index: 10;
+}
+.five h1
+{
+  display: none;
+}
+.five .lscroll
+{
+  top: 55%;
+}
+.rscroll
+{
+top: 55%;
+right: 0;
+}
+  .deck
+  {
+    width:100%;
+    height:400px;
+    background-color: #AEE0F9;
+    border-radius: 20px;
+    padding: 60px 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+  }
+  .deck:nth-child(1)
+  {
+    background-color: #F5AF8A;
+  }
+  .deck:nth-child(2)
+  {
+    background-color: #ADE674;
+  }
+  .deck:nth-child(3)
+  {
+    background-color: #FFD265;
+  }
+  .deck:nth-child(4)
+  {
+    background-color: #ABDF74;
+  }
+  .deck:nth-child(5)
+  {
+    background-color: #DAAEEA;
+  }
+.decks .deck:nth-child(1) .deck-info
+{
+background-color: #EA6D44;
+}
+.decks .deck:nth-child(2) .deck-info
+{
+background-color: #6AC337;
+}
+.decks .deck:nth-child(3) .deck-info
+{
+background-color: #FFB500;
+}
+.decks .deck:nth-child(4) .deck-info
+{
+background-color: #8BC045;
+}
+.decks .deck:nth-child(5) .deck-info
+{
+background-color: #C790DB;
+}
+
+
+  .deck .sm-text
+  {
+    font-size: 1rem;
+    font-family: figtree;
+    color: gray;
+    padding-top: 1rem;
+  }
+  .deck-info{
+    display: flex;
+    align-items: center;
+    /* background-color: crimson; */
+    border: 1px solid black; 
+    border-radius: 20px;
+    min-height:100px;
+    padding: 1rem;
+  }
+
+  .deck-info img
+  {
+    width: 100px;
+  }
+.five .decks .deck p
+{
+  font-size:1.5rem;
+}
+.five h5
+{
+  text-align: center;
+  font-size: 2rem;
+}
+.five .deck .deck-info .lg-text
+{
+  
+  font-size: 1rem;
+  font-family: figtree;
+  font-weight: 800;
+  padding-right: 1rem;
+  color: #fff;
+  padding-left: 5px;
+}
+.five .deck .deck-info button
+{
+padding: 1rem ;
+border-radius: 25px;
+border: 1px solid black;
+}
+.seperate{
+  height: 100px;
+  width: 1px;
+  background-color: #000;
+}
+  .deck p
+  {
+    text-align: center;
+    font-family: reckless;
+    font-size: 2rem;
+  }
+  .small-text{
+    font-size:0.1rem;
+  }
+@media (min-width:768px) {
+
 }
 @media (min-width:1024px) {
   .main-text{
@@ -354,7 +682,7 @@ nav .nav-part-3 h3
 }
 .two
 {
-  padding:  0 0;
+  padding:   1rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,5 +692,167 @@ nav .nav-part-3 h3
 {
   font-size: 4rem;
   width: 60%;
+  padding-top:5rem ;
+  padding-bottom:8rem ;
+}
+.two .cards
+{
+  padding-top: 1rem;
+}
+.two .cards
+{
+  padding: 1rem;
+  width: 100%;
+  min-height: 40vw;
+}
+.two .left-scroll
+{
+  top:60%;
+  z-index: 1;
+  left: 1%;
+}
+.two .right-scroll
+{
+   top:60%;
+  z-index: 1;
+  right:1%; 
+}
+.three
+{
+  padding: 0 20vw;
+}
+ .three p
+{
+  font-family: reckless;
+  font-size: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}  
+ .three br
+ {
+  display: none;
+ }
+ .three .input::placeholder
+ {
+  background:transparent
+ }
+ .three .small-text{
+  padding-top: 100px;
+ }
+ .three .texts button
+{
+  font-family: reckless;
+  font-size: 1.5rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #AEE0F9;
+}
+input
+{
+  font-size: 2rem;
+  font-family: reckless;
+  width: 50%;
+}
+.four
+{
+  width: 100%;
+  min-height: 800px;
+  background: url(./adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp_v=1771592855&width=2560.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 10vw 5vw 10vw; 
+  align-items: center;
+  gap: 10rem;
+}
+.four h1
+{
+  color: #fff;
+  font-size: 9rem;
+  font-weight: 900;
+  font-family: figtree;
+  text-align: center;
+}
+.four p
+{
+  font-family: reckless;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.four .four-features
+{
+  width: 65%;
+  min-height: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a
+{
+  display: none;
+}
+.four button
+{
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+}
+.five
+{
+  width:100%;
+  min-height: 200px;
+  padding:15vw 10vw 5vw 10vw;
+  position: relative;
+  overflow: hidden;
+}
+.decks
+{
+  padding-top: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
+  /* overflow: hidden; */
+  transition: transform 0.4s ease;
+}
+  .deck
+  {
+    width:290px;
+    height:400px;
+    background-color: #AEE0F9;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .deck-info{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-color: crimson; */
+    border: 1px solid black; 
+    border-radius: 20px;
+    min-height:100px; 
+  }
+    .deck-info img
+  {
+    width: 50px;
+  }
+.five .decks .deck p
+{
+  font-size:1.5rem;
+}
+.five .scroll-bar button
+{
+  display: none;
 }
 }
