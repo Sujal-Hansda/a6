@@ -93,3 +93,24 @@ lBtn.addEventListener("click", () => {
   if (deckCounter > 0) deckCounter--;
   updateDeckSlider();
 });
+const boxSlider = document.querySelector(".box-slider");
+const lsBtn = document.querySelector(".ls");
+const rsBtn = document.querySelector(".rs");
+
+let boxIndex = 0;
+const totalBoxes = 4;
+
+const updateBoxSlider = () => {
+  boxSlider.style.transform = `translateX(-${boxIndex * 100}%)`;
+  boxSlider.style.transition = "transform 0.5s ease";
+};
+
+rsBtn.addEventListener("click", () => {
+  boxIndex = (boxIndex + 1) % totalBoxes;
+  updateBoxSlider();
+});
+
+lsBtn.addEventListener("click", () => {
+  boxIndex = (boxIndex - 1 + totalBoxes) % totalBoxes;
+  updateBoxSlider();
+});

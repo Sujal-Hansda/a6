@@ -213,7 +213,7 @@ nav .nav-part-3 img
   padding: 2rem;
   border-radius: 10px;
 }
-.cards .card:nth-child(1) .image { background: #ABED78; }
+.cards .card:nth-child(1) .image { background: #C1EE91; }
 .cards .card:nth-child(2) .image { background: #FFD884; }
 .cards .card:nth-child(3) .image { background: #B0E8C1; }
 .cards .card:nth-child(4) .image { background: #AEE0F9; }
@@ -449,7 +449,6 @@ input
   width: fit-content;
   font-weight: bold;
   border-radius: 5px;
-  border: none;
   padding: 5px;
   transform: rotate(-2.5deg);
   border:1px solid black;
@@ -612,6 +611,463 @@ border: 1px solid black;
   .small-text{
     font-size:0.1rem;
   }
+  .six
+  {
+    width: 100%;
+    min-height: 100vh;
+    
+  }
+    .six img
+    {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+  .six .box1
+  {
+    min-height: 400px;
+    background-color: #2a2857;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+    align-items: center;
+    color: #fff;
+    gap: 5rem;
+  }
+    .six .box1 h1
+    {
+      font-size: 3rem;
+      font-weight: 400;
+      font-family: reckless;
+      text-align: center;
+    }
+        .six .box1 p
+        {
+          font-size: 1.5rem;
+          font-family:figtree ;
+          text-align: center;
+        }
+        .six .box1 button
+        {
+          font-size: 1.5rem;
+          width: 100%;
+          padding: 1rem 0;
+          border-radius: 50px;
+        }
+        .boxes 
+        {
+          position: relative;
+        }
+        .boxes .sbtn .ls
+        {
+          position: absolute;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          font-size: 2rem;
+        }
+                .boxes .sbtn .rs
+        {
+          position: absolute;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          font-size: 2rem;
+        }
+        .boxes .sbtn .ls{
+          top: 65%;
+          left: 2%;
+          z-index: 9;
+        }
+        .boxes .sbtn .rs{
+          top: 65%;
+          right: 2%;
+          z-index: 9;
+        }
+        .box-slider
+        {
+          display: flex;
+          width: 100%;
+          /* overflow: hidden; */
+        }
+        .box2,.box3,.box4,.box5{
+          flex-shrink: 0;
+          width: 100%;
+        }
+  .six .box2
+{
+width: 100%;
+min-height: 100vh;
+background-color: #9F6429;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: center;
+font-family: figtree;
+padding-top: 8rem;
+color: #fff;
+padding: 8rem 1rem 1.5rem 1rem;
+}
+.six .box2 .our
+{
+  background-color: #FFDAB3;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+  }
+  .six .box2 h1
+  {
+    text-align: center;
+  }
+  .six .box2 p
+  {
+    padding-bottom: 20vh;
+  }
+  .six .box2 .subbox
+  {
+    position: relative;
+    color: #000;
+    width: 90%;
+    min-height: 300px;
+    background-color:#FFCB96;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .six .box2 .subbox img
+    {
+      position: absolute;
+      width: 500px;
+      object-fit: contain;
+      top: -30%;
+      left: -40%;
+    }
+    .six .box2 .subbox .n
+    {
+      padding-top: 25vh;
+    }
+      .six .box2 .subbox .nice
+      {
+        position: relative;
+  background-color: #F09F54;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+      }
+      .six .box2 .subbox h3
+      {
+        font-family: reckless;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .six .box2 .subbox p
+      {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .six .box2 .shop
+      {
+        padding: 1rem 6rem;
+        border-radius: 25px;
+        border: none;
+        font-size: 1rem;
+      }
+.six .box3
+{
+width: 100%;
+min-height: 100vh;
+background-color: #4A6808;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: center;
+font-family: figtree;
+padding-top: 8rem;
+color: #fff;
+padding: 8rem 1rem 1.5rem 1rem;
+}
+.six .box3 .our
+{
+  background-color: #C0E571;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+  }
+  .six .box3 h1
+  {
+    text-align: center;
+  }
+  .six .box3 p
+  {
+    padding-bottom: 20vh;
+  }
+  .six .box3 .subbox
+  {
+    position: relative;
+    color: #000;
+    width: 90%;
+    min-height: 300px;
+    background-color:#C0E571;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .six .box3 .subbox img
+    {
+      position: absolute;
+      width: 500px;
+      object-fit: contain;
+      top: -30%;
+      left: -45%;
+    }
+    .six .box3 .subbox .n
+    {
+      padding-top: 25vh;
+    }
+      .six .box3 .subbox .nice
+      {
+  background-color: #6AC337;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+      }
+      .six .box3 .subbox h3
+      {
+        font-family: reckless;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .six .box3 .subbox p
+      {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .six .box3 .shop
+      {
+        padding: 1rem 6rem;
+        border-radius: 25px;
+        border: none;
+        font-size: 1rem;
+      }
+      .six .box4
+{
+width: 100%;
+min-height: 100vh;
+background-color: #986300;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: center;
+font-family: figtree;
+padding-top: 8rem;
+color: #fff;
+padding: 8rem 1rem 1.5rem 1rem;
+}
+.six .box4 .our
+{
+  background-color: #FFD265;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+  }
+  .six .box4 h1
+  {
+    text-align: center;
+  }
+  .six .box4 p
+  {
+    padding-bottom: 20vh;
+  }
+  .six .box4 .subbox
+  {
+    position: relative;
+    color: #000;
+    width: 90%;
+    min-height: 300px;
+    background-color:#FFD265;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .six .box4 .subbox img
+    {
+      position: absolute;
+      width: 500px;
+      object-fit: contain;
+      top: -30%;
+      left: -45%;
+    }
+    .six .box4 .subbox .n
+    {
+      padding-top: 25vh;
+    }
+      .six .box4 .subbox .nice
+      {
+  background-color: #FFB500;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+      }
+      .six .box4 .subbox h3
+      {
+        font-family: reckless;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .six .box4 .subbox p
+      {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .six .box4 .shop
+      {
+        padding: 1rem 6rem;
+        border-radius: 25px;
+        border: none;
+        font-size: 1rem;
+      }
+      .six .box5
+{
+width: 100%;
+min-height: 100vh;
+background-color: #E8AA63;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+align-items: center;
+font-family: figtree;
+padding-top: 8rem;
+color: #fff;
+padding: 8rem 1rem 1.5rem 1rem;
+}
+.six .box5 .our
+{
+  background-color: #FFDAB3;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+  }
+  .six .box5 h1
+  {
+    text-align: center;
+  }
+  .six .box5 p
+  {
+    padding-bottom: 20vh;
+  }
+  .six .box5 .subbox
+  {
+    position: relative;
+    color: #000;
+    width: 90%;
+    min-height: 300px;
+    background-color:#FFDAB3;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+    .six .box5 .subbox img
+    {
+      position: absolute;
+      width: 500px;
+      object-fit: contain;
+      top: -30%;
+      left: -45%;
+    }
+    .six .box5 .subbox .n
+    {
+      padding-top: 25vh;
+    }
+      .six .box5 .subbox .nice
+      {
+  background-color: #E8AA63;
+  font-family: figtree;
+  font-size: 2.2rem;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transform: rotate(-2.5deg);
+  border:1px solid black;
+      }
+      .six .box5 .subbox h3
+      {
+        font-family: reckless;
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .six .box5 .subbox p
+      {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .six .box5 .shop
+      {
+        padding: 1rem 6rem;
+        border-radius: 25px;
+        border: none;
+        font-size: 1rem;
+      }
+      
 @media (min-width:768px) {
 
 }
