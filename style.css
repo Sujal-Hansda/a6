@@ -1073,8 +1073,11 @@ padding: 8rem 1rem 1.5rem 1rem;
         width: 100%;
         height: 100vh;
         padding: 7vh 4vw;
+        position: relative;
+        overflow: hidden;
+        
       }
-      .seven button
+      .seven .journal 
       {
   background-color: #FFB500;
   font-family: figtree;
@@ -1099,15 +1102,238 @@ padding: 8rem 1rem 1.5rem 1rem;
         display: flex;
         justify-content: start;
         width: 100%;
-        min-height: 380px;
-        background-color: lightblue;
+        height: 420px;
+        padding: 1rem;
+        /* background-color: lightblue; */
+        gap: 2rem;
+        /* overflow: hidden; */
+        transform: transition 0.4s ease;
+
       }
       .seven .page
       {
-        background-color: crimson;
-        height: 100%;
-        width: 95%;
+        background-color: #2a2857;
+        height: 350px;
+        width: fit-content;
+        flex-shrink: 0;
+        position: relative;
       }
+      .seven .page img
+            {
+              height:350px;
+              width: 100%;
+              object-fit: cover;
+            }
+            .seven .page p
+            {
+              padding:1rem;
+              font-family: figtree;
+              font-size: 1.3rem;
+              font-weight: 500;
+            }
+        
+            .seven  .scr .lsr{
+               padding: 1.4rem;
+              position: absolute;
+              border-radius: 50%;
+              background-color: #fff;
+              height:2rem ;
+              width:  2rem;
+              font-size: 2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              top: 54%;
+              left: 3%;
+              z-index: 90;
+              border: 1px solid black;
+              
+            }
+            .seven .scr .rsr{
+              padding: 1.4rem;
+              position: absolute;
+              border-radius: 50%;
+              background-color: #fff;
+              height:2rem ;
+              width:  2rem;
+              font-size: 2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              top: 54%;
+              right: 7%;
+              z-index: 90;
+              border: 1px solid black;
+            }
+            .seven .jr
+            {
+              display: flex;
+              justify-content: center;
+              padding: 3rem 2rem;
+            }
+            .seven .jr button
+            {
+              font-size: 1.5rem;
+              padding: 1rem 2rem;
+              border-radius: 35px;
+              background-color: #2a2857;
+              color: #fff;
+            }
+            .last-image
+            {
+              width: 100%;
+              height: 350px;
+              object-fit: cover;
+            }
+.eight
+{
+  width: 100%;
+}
+.eight img
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.eight .sec-last
+{
+  height: 400px;
+  width: 100%;
+  background-color: #F26412;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  color: #fff;
+  gap: 3rem;
+}
+.eight .sec-last h3
+{
+font-family: reckless;
+text-align: center;
+font-size: 3rem;
+font-weight: 500;
+}
+.eight .sec-last p
+{
+  font-family: figtree;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.eight .sec-last .about
+{
+  display: flex;
+  justify-content: center;
+}
+.eight .sec-last .about button
+{
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  border-radius: 35px;
+  border: none;
+  font-family: figtree;
+}
+.nine
+{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #B6D6F2;
+  padding: 3rem 1rem;
+}
+.nine h4
+{
+  font-family: figtree;
+  font-size: 2rem;
+}
+.nine p
+{
+  font-family: reckless;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.nine input
+{
+  width: 100%;
+  padding:1rem 1rem ;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.nine input::placeholder
+{
+  font-size: 1.5rem;
+  font-family: figtree;
+}
+.nine .submit
+{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.nine button
+{
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: figtree;
+  border: 1px solid black;
+  border-radius: 35px;
+  color: #fff;
+  background-color: #2a2857;
+}
+.nine .icons i
+{
+  font-size: 2.4rem;
+  padding-right: 0.8rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.5rem;
+  
+}
+.nine .icons
+{
+  padding-bottom: 2rem;
+}
+.nine .last-parent
+{
+  color: #fff;
+  background-color: #2a2857;
+  width: 100%;
+  min-height: 400px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-family: reckless;
+  gap: 1rem;
+  border-radius: 10px;
+
+} .nine .last-parent h3
+{
+font-weight: 100;
+}
+.nine .last-parent i
+{
+  padding: 0.2rem;
+  color: #000;
+  background-color: #AEE0F9;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.nine .last-child
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.nine .last-parent .line
+{
+  height: 1px;
+  background-color: gray;
+}
 @media (min-width:768px) {
 
 }

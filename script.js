@@ -114,3 +114,27 @@ lsBtn.addEventListener("click", () => {
   boxIndex = (boxIndex - 1 + totalBoxes) % totalBoxes;
   updateBoxSlider();
 });
+
+const pages = document.querySelector(".pages");
+const allPages = document.querySelectorAll(".page");
+const lsr = document.querySelector(".lsr");
+const rsr = document.querySelector(".rsr");
+
+let pageIndex = 0;
+const totalPages = allPages.length;
+const pageWidth = allPages[0].offsetWidth + 32; // 32 = gap (2rem)
+
+const updatePageSlider = () => {
+  pages.style.transform = `translateX(-${pageIndex * pageWidth}px)`;
+  pages.style.transition = "transform 0.4s ease";
+};
+
+rsr.addEventListener("click", () => {
+  pageIndex = (pageIndex + 1) % totalPages;
+  updatePageSlider();
+});
+
+lsr.addEventListener("click", () => {
+  pageIndex = (pageIndex - 1 + totalPages) % totalPages;
+  updatePageSlider();
+});
